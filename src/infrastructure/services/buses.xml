@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<services>
+    <service
+        id="app.command_bus"
+        class="src.infrastructure.command_bus.CommandBus"/>
+    <service
+        id="app.query_bus"
+        class="src.infrastructure.query_bus.QueryBus"/>
+</services>

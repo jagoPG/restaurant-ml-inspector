@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<services>
+    <service
+        id="app.social_networks.facebook"
+        class="src.social_networks.facebook.FacebookClient">
+        <arguments>
+            <argument name="app_id" type="config">FACEBOOK_OAUTH_APP_ID</argument>
+            <argument name="app_secret" type="config">FACEBOOK_OAUTH_APP_SERCRET</argument>
+            <argument name="permissions" type="config">FACEBOOK_OAUTH_PERMISSIONS</argument>
+        </arguments>
+    </service>
+    <service
+        id="app.social_networks.twitter"
+        class="src.social_networks.twitter_cli.TwitterClient">
+        <arguments>
+            <argument name="consumer_key" type="config">TWITTER_CONSUMER_KEY</argument>
+            <argument name="consumer_secret" type="config">TWITTER_CONSUMER_SECRET</argument>
+            <argument name="access_token" type="config">TWITTER_ACCESS_TOKEN</argument>
+            <argument name="access_token_secret" type="config">TWITTER_ACCESS_TOKEN_SECRET</argument>
+        </arguments>
+    </service>
+    <service
+        id="app.social_networks.google_places"
+        class="src.social_networks.google_places.GooglePlacesClient">
+        <arguments>
+            <argument name="api_key" type="config">GOOGLE_PLACES_API_KEY</argument>
+        </arguments>
+    </service>
+</services>

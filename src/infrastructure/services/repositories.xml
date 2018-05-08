@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<services>
+    <service 
+        id="app.repository.social_network"
+        class="src.persistence.database.neo4j_repository.Neo4jSocialNetworkRepository"/>
+    <service
+        id="app.repository.social_network_restaurant"
+        class="src.persistence.database.neo4j_repository.Neo4jSocialNetworkRestaurantRepository"/>
+    <service
+        id="app.repository.analysis_restaurant"
+        class="src.persistence.database.neo4j_repository.Neo4jAnalysisRestaurantRepository"/>
+    <service
+        id="app.repository.review"
+        class="src.persistence.database.neo4j_repository.Neo4jReviewRepository"/>
+    <service
+        id="app.repository.project"
+        class="src.persistence.database.neo4j_repository.Neo4jProjectRepository"/>
+    <service
+        id="app.repository.analysis"
+        class="src.persistence.database.neo4j_repository.Neo4jAnalysisRepository"/>
+    <service
+        id="app.repository.key_point"
+        class="src.persistence.database.neo4j_repository.Neo4jKeyPointRepository"/>
+    <service
+        id="app.repository.country"
+        class="src.persistence.database.neo4j_repository.Neo4jCountryRepository"/>
+    <service
+        id="app.repository.keyword"
+        class="src.persistence.database.neo4j_repository.Neo4jKeywordRepository"/>
+    <service
+        id="app.repository.user"
+        class="src.persistence.database.neo4j_repository.Neo4jUserRepository"/>
+    <service
+        id="app.repository.synonym"
+        class="src.persistence.database.synonym_manager.SynonymManager">
+        <arguments>
+            <argument name="file_path" type="file">./src/application/data/synonyms.xml</argument>
+            <argument name="keyword_repository" type="service">app.repository.keyword</argument>
+        </arguments>
+    </service>
+</services>

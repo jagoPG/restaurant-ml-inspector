@@ -1,0 +1,31 @@
+sudo: required
+language: python
+python:
+  - "3.6"
+cache:
+  pip: true
+  yarn: true
+  directories:
+    - node_modules
+    - ~/.cache/pip
+services:
+  - neo4j
+addons:
+  neo4j: '3.2.7'
+env:
+  - NEO4J_VERSION="3.2.7"
+install:
+  - pip install -r requirements.txt
+  - yarn install
+before_script:
+  - sudo service neo4j stop
+  - sleep 10
+  - sudo rm -r /var/lib/neo4j/data/databases/test_database || true
+  - neo4j-admin load --from=test/test_database.backup --database=test_database
+  - if [ $(cat /usr/local/neo4j-"${NEO4J_VERSION}"/conf/neo4j.conf | grep "dbms.active_database=test_database") ]; then echo 'Nothing to do'; else sudo sed -i '' '/dbms.active_database/d' /usr/local/neo4j-"${NEO4J_VERSION}"/conf/neo4j.conf; sudo echo 'dbms.active_database=test_database' >> /usr/local/neo4j-"${NEO4J_VERSION}"/conf/neo4j.conf; fi
+  - sudo service neo4j start
+  - sleep 10
+  - curl -v POST http://neo4j:neo4j@localhost:7474/user/neo4j/password -d"password=neo4j"
+  - yarn build
+script:
+  - python tests.py

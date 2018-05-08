@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<services>
+  <service
+    id="app.data_transformer.project"
+    class="src.application.data_transformer.project.ProjectDataTransformer"/>
+  <service
+    id="app.data_transformer.analysis"
+    class="src.application.data_transformer.analysis.AnalysisDataTransformer"/>
+  <service
+    id="app.data_transformer.restaurant_analysis"
+    class="src.application.data_transformer.restaurant_analysis.RestaurantAnalysisDataTransformer"
+  />
+  <service
+    id="app.data_transformer.country"
+    class="src.application.data_transformer.country.CountryDataTransformer"/>
+  <service
+    id="app.data_transformer.user"
+    class="src.application.data_transformer.user.UserDataTransformer"/>
+</services>

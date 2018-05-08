@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<services>
+    <service
+        id="app.fixtures.keyword_loader"
+        class="src.application.fixtures.keyword_loader.KeywordLoader">
+      <arguments>
+        <argument name="keyword_repository" type="service">app.repository.keyword</argument>
+        <argument name="keyword_xml_file" type="file">./src/application/data/restaurant_keywords.xml</argument>
+        <argument name="synonyms_xml_file" type="file">./src/application/data/synonyms.xml</argument>
+      </arguments>
+    </service>
+  <service
+    id="app.fixtures.basic_structure_loader"
+    class="src.application.fixtures.basic_structure_loader.BasicStructureLoader">
+    <arguments>
+      <argument name="command_bus" type="service">app.command_bus</argument>
+      <argument name="query_bus" type="service">app.query_bus</argument>
+      <argument name="keyword_loader" type="service">app.fixtures.keyword_loader</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="keyword_repository" type="service">app.repository.keyword</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+    </arguments>
+  </service>
+</services>

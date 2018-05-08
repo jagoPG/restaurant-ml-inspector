@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Data Administration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+</head>
+<body>
+{% if error %}
+    <script type="text/plain" id="error">
+      {{ error }}
+    </script>
+{% endif %}
+<div id="login-app"></div>
+<script src="/static/authentication_bundle.js"></script>
+</body>
+</html>

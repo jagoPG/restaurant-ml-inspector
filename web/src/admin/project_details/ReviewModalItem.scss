@@ -1,0 +1,23 @@
+.review-control {
+  border-top: dotted black 1px;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+  margin-top: 18px;
+}
+
+.review-control__sentiment {
+  cursor: pointer;
+  flex: 1;
+
+  svg:hover {
+    color: red;
+  }
+}
+
+.review-control__spam {
+  align-items: center;
+  color: cornflowerblue;
+  cursor: pointer;
+  display: flex;
+}

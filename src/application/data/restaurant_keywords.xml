@@ -1,0 +1,350 @@
+<?xml version="1.0" ?>
+<restaurant_keywords>
+    <!-- Food -->
+    <keyword identifier="bd8a274f-4265-4c70-a69f-7a9c6973cd9e">
+        <word lang="en">appetizer</word>
+        <word lang="es">aperitivo</word>
+    </keyword>
+    <keyword identifier="27e69733-654d-4352-8bcf-79d10a001e88">
+        <word lang="en">hors d'oeuvre</word>
+        <word lang="es">entremés</word>
+    </keyword>
+    <keyword identifier="adbd651b-4fd1-4dd2-b8d8-a615c6ea0362">
+        <word lang="en">antipasto</word>
+        <word lang="es">antipasto</word>
+    </keyword>
+    <keyword identifier="376dbdb8-3275-4225-b825-5a31493cfb4c">
+        <word lang="en">aperitif</word>
+        <word lang="es">aperitivo</word>
+    </keyword>
+    <keyword identifier="ac624012-704d-486f-bb7b-348256fe84ad">
+        <word lang="en">cocktail</word>
+        <word lang="es">cóctel</word>
+    </keyword>
+    <keyword identifier="62657795-4325-44e8-814d-9138b48be699">
+        <word lang="en">personnel</word>
+        <word lang="es">personal</word>
+    </keyword>
+    <keyword identifier="193b2e63-2b56-4ae6-9ede-1699183a1950">
+        <word lang="en">tidbit</word>
+        <word lang="es">exquisitez</word>
+    </keyword>
+    <keyword identifier="d9c11b6a-7f05-43db-955f-607918bd3594">
+        <word lang="en">delicacy</word>
+        <word lang="es">exquisitez</word>
+    </keyword>
+    <keyword identifier="e9573f9e-711a-4e53-a7cd-92c3c4c18b50">
+        <word lang="en">appetiser</word>
+        <word lang="es">tapa</word>
+    </keyword>
+    <keyword identifier="eb42983f-0d02-4f48-bafb-4aaa6a748b99">
+        <word lang="en">starter</word>
+        <word lang="es">entrante</word>
+    </keyword>
+    <keyword identifier="516b398c-b1f5-4383-8bf8-ce22d6ed9b5b">
+        <word lang="en">nibbles</word>
+        <word lang="es">refrigerio</word>
+    </keyword>
+    <keyword identifier="64060b5d-ee97-4995-92f9-e0a7cd110384">
+        <word lang="en">foretaste</word>
+        <word lang="es">muestra</word>
+    </keyword>
+    <keyword identifier="0af41212-6a34-4ad8-b525-9fd466174fba">
+        <word lang="en">sampler</word>
+        <word lang="es">muestra</word>
+    </keyword>
+    <keyword identifier="ba688626-b534-442a-931e-cfdfce6fb2dc">
+        <word lang="en">food</word>
+        <word lang="es">comida</word>
+    </keyword>
+    <keyword identifier="5ab32f17-bd48-4ec5-944e-9b8fd761b4ee">
+        <word lang="en">victual</word>
+        <word lang="es">provisión</word>
+    </keyword>
+    <keyword identifier="5732bcd2-e70b-46ba-bb63-34cadaf642e9">
+        <word lang="en">fare</word>
+        <word lang="es">alimento</word>
+    </keyword>
+    <keyword identifier="71f95082-771f-4eb8-bdda-c93a76b36b32">
+        <word lang="en">foodstuff</word>
+        <word lang="es">alimento</word>
+    </keyword>
+    <keyword identifier="3de0e832-950c-433b-b9f0-331155b5f856">
+        <word lang="en">edible</word>
+        <word lang="es">comestible</word>
+    </keyword>
+    <keyword identifier="3e2ffe31-cb08-4898-82e9-d03c5fa2d300">
+        <word lang="en">comestible</word>
+        <word lang="es">comestible</word>
+    </keyword>
+    <keyword identifier="d9a14c47-326c-4d7c-9e37-bda386dc8c92">
+        <word lang="en">viand</word>
+        <word lang="es">vianda</word>
+    </keyword>
+    <keyword identifier="e61e6e0d-8fec-4d24-91a3-24463de7296d">
+        <word lang="en">provision</word>
+        <word lang="es">provisión</word>
+    </keyword>
+    <keyword identifier="74ac57a5-ce9e-461f-a2fd-3c066ae224ab">
+        <word lang="en">rations</word>
+        <word lang="es">ración</word>
+    </keyword>
+    <keyword identifier="ff18e1f2-9d0e-4be3-8f00-26b649a135e9">
+        <word lang="en">grub</word>
+        <word lang="es">papeo</word>
+    </keyword>
+    <keyword identifier="2435bb9e-d807-4689-b91d-9d4b49dbf68a">
+        <word lang="en">vittle</word>
+        <word lang="es">víver</word>
+    </keyword>
+    <keyword identifier="1bbef86c-7e5d-44a6-af2a-0015b0a5270f">
+        <word lang="en">eats</word>
+        <word lang="es">comida</word>
+    </keyword>
+    <keyword identifier="943159ba-af6b-4d85-8aa2-c40cdc53498a">
+        <word lang="en">chow</word>
+        <word lang="es">pipirín</word>
+    </keyword>
+    <keyword identifier="fb997bde-642c-43b9-974e-f443d03614c1">
+        <word lang="en">feed</word>
+        <word lang="es">alimento</word>
+    </keyword>
+    <keyword identifier="d3cff708-b028-4169-a716-c30271d552ff">
+        <word lang="en">dinner</word>
+        <word lang="es">cena</word>
+    </keyword>
+    <keyword identifier="46f55161-207f-41bb-985f-79f34ce91e81">
+        <word lang="en">supper</word>
+        <word lang="es">cena ligera</word>
+    </keyword>
+    <keyword identifier="888feeb6-8158-497c-8a1e-b6557ab36d3a">
+        <word lang="en">feast</word>
+        <word lang="es">festín</word>
+    </keyword>
+    <keyword identifier="715d8edf-c22b-493a-8f48-f4369c799ae7">
+        <word lang="en">banquet</word>
+        <word lang="es">banquete</word>
+    </keyword>
+    <keyword identifier="6cafe748-4618-4c90-822e-d9fb2dd8b142">
+        <word lang="en">main meal</word>
+        <word lang="es">plato principal</word>
+    </keyword>
+    <keyword identifier="1ba8f2f6-387e-422f-a066-32e2708bd696">
+        <word lang="en">principal meal of the day</word>
+        <word lang="es">menú del día</word>
+    </keyword>
+    <keyword identifier="7c229e52-4809-4b94-aeca-f157ce1297d6">
+        <word lang="en">refection</word>
+    </keyword>
+    <keyword identifier="f0edbd4a-0b67-4027-93b4-5fc2adfdb6a5">
+        <word lang="en">collation</word>
+        <word lang="es">colación</word>
+    </keyword>
+    <keyword identifier="1342a1d1-7c59-4beb-b618-d038f739502a">
+        <word lang="en">repast</word>
+        <word lang="es">ágape</word>
+    </keyword>
+    <keyword identifier="ffb2fc8b-ca92-4073-91a6-a299b253f47a">
+        <word lang="en">course dinner</word>
+        <word lang="es">plato</word>
+    </keyword>
+    <keyword identifier="94beb0c1-211e-4c93-bbde-23fa208e6c29">
+        <word lang="en">meal</word>
+        <word lang="es">alimento</word>
+    </keyword>
+    <keyword identifier="8522c21a-1c65-4bd2-9659-bc99106d23dc">
+        <word lang="en">first course</word>
+        <word lang="es">primer plato</word>
+    </keyword>
+    <keyword identifier="cf6aae4f-0070-4e66-9b24-4d381c0fac6c">
+        <word lang="en">midnight feast</word>
+    </keyword>
+    <keyword identifier="34746df3-d82e-49df-a72a-0fa09872302f">
+        <word lang="en">buffet</word>
+        <word lang="es">buffet</word>
+    </keyword>
+    <keyword identifier="9c13529c-d4c5-4a42-ad10-a61430a6b727">
+        <word lang="en">picnic</word>
+        <word lang="es">picnic</word>
+    </keyword>
+    <keyword identifier="a4eb3156-a191-47a5-a1b2-a3383aac4088">
+        <word lang="en">quality</word>
+        <word lang="es">calidad</word>
+    </keyword>
+    <keyword identifier="76b7847d-18ad-41a4-9670-72b1424e688d">
+        <word lang="en">condition</word>
+        <word lang="es">condición</word>
+    </keyword>
+    <keyword identifier="326ea72f-d284-4082-a563-de26649d2733">
+        <word lang="en">caliber</word>
+        <word lang="es">calibre</word>
+    </keyword>
+    <keyword identifier="a81de4b3-0157-4e36-b7d0-a3acb11e1716">
+        <word lang="en">status</word>
+        <word lang="es">estatus</word>
+    </keyword>
+    <keyword identifier="0fc7e4ea-bd48-4da7-b483-b835fdebff7c">
+        <word lang="en">rank</word>
+        <word lang="es">rango</word>
+    </keyword>
+
+    <!-- Place -->
+    <keyword identifier="293670a0-1d2e-456a-aef2-5469c4141215">
+        <word lang="en">place</word>
+        <word lang="es">lugar</word>
+    </keyword>
+    <keyword identifier="293670a0-1d2e-456a-aef2-5469c4141225">
+        <word lang="en">environment</word>
+        <word lang="es">entorno</word>
+    </keyword>
+    <keyword identifier="385c3f5c-f8a4-495e-bb67-08672c9e9fb6">
+        <word lang="en">location</word>
+        <word lang="es">localización</word>
+    </keyword>
+    <keyword identifier="2f4b2b6e-da97-4c8e-81e5-c7660e9ecdbb">
+        <word lang="en">spot</word>
+        <word lang="es">lugar</word>
+    </keyword>
+    <keyword identifier="1e165ed8-826b-459c-88fb-9c34c5e5bbbf">
+        <word lang="en">situation</word>
+        <word lang="es">situación</word>
+    </keyword>
+
+    <!-- Service -->
+    <keyword identifier="151da5a4-9b57-4db5-a524-9878e1350a1b">
+        <word lang="en">degree</word>
+        <word lang="es">nota</word>
+    </keyword>
+    <keyword identifier="1b6e99cf-e934-4baa-b485-efe1d4837ad8">
+        <word lang="en">reputation</word>
+        <word lang="es">reputación</word>
+    </keyword>
+    <keyword identifier="f3a02342-1753-43f4-a936-c94704fe05f9">
+        <word lang="en">service</word>
+        <word lang="es">service</word>
+    </keyword>
+    <keyword identifier="2e193dc7-4bec-45f0-bff1-acc519e2b7f2">
+        <word lang="en">waitress</word>
+        <word lang="es">camarera</word>
+    </keyword>
+    <keyword identifier="e8b6d8b0-2eae-4012-af8c-1eb1f720c8f7">
+        <word lang="en">waiter</word>
+        <word lang="es">camarera</word>
+    </keyword>
+    <keyword identifier="38b9f954-bcb1-452e-91da-accda89eb49b">
+        <word lang="en">attendant</word>
+        <word lang="es">camarero</word>
+    </keyword>
+    <keyword identifier="d7a0f6f2-768c-4c26-bdcc-d2eab7f7874e">
+        <word lang="en">footman</word>
+        <word lang="es">criado</word>
+    </keyword>
+    <keyword identifier="c015903c-e819-4559-9520-2d9fe3f48bf5">
+        <word lang="en">server</word>
+        <word lang="es">sirviente</word>
+    </keyword>
+    <keyword identifier="e3526937-c6f3-4778-8118-43d22c368d03">
+        <word lang="en">headwaiter</word>
+        <word lang="es">encargado</word>
+    </keyword>
+  <keyword identifier="f3526937-c6f3-4778-8118-43d22c368d03">
+        <word lang="en">people</word>
+        <word lang="es">gente</word>
+    </keyword>
+
+    <!-- Price -->
+    <keyword identifier="559eef6e-2fc4-4807-ba15-cc78ff6121cb">
+        <word lang="en">price</word>
+        <word lang="es">precio</word>
+    </keyword>
+    <keyword identifier="bc0ec08d-c39d-419d-992a-7879a5fa0919">
+        <word lang="en">expense</word>
+        <word lang="es">gasto</word>
+    </keyword>
+    <keyword identifier="d9c97b83-e165-4796-bdf9-13a65843e723">
+        <word lang="en">cost</word>
+        <word lang="es">coste</word>
+    </keyword>
+    <keyword identifier="46a6194e-8c67-48a1-8f11-e46204709350">
+        <word lang="en">fee</word>
+        <word lang="es">factura</word>
+    </keyword>
+    <keyword identifier="7c55bd33-2111-40ba-b1d2-ea2a1fbd4ccf">
+        <word lang="en">drink</word>
+        <word lang="es">bebida</word>
+    </keyword>
+    <keyword identifier="cfbd5f1f-015d-4658-95f0-a1f7d494b643">
+        <word lang="en">menu</word>
+        <word lang="es">menu</word>
+    </keyword>
+    <keyword identifier="3b2a1c13-ce5c-4026-9105-5e6ba0fd0a4e">
+        <word lang="en">offer</word>
+        <word lang="es">oferta</word>
+    </keyword>
+    <keyword identifier="66323ae5-3343-4b74-a44e-1da80a5d3f39">
+        <word lang="en">access</word>
+        <word lang="es">acceso</word>
+    </keyword>
+    <keyword identifier="bd9527e7-406e-4da8-8452-65cd0cc8e836">
+        <word lang="en">flavor</word>
+        <word lang="es">savor</word>
+    </keyword>
+    <keyword identifier="de6fe6a3-8988-4150-83fb-2b823e8f338d">
+        <word lang="en">product</word>
+        <word lang="es">producto</word>
+    </keyword>
+
+    <!-- Servicios -->
+    <keyword identifier="c1602dc4-c5d4-4e6e-9ae2-7a69b674f531">
+        <word lang="en">air conditioning</word>
+        <word lang="es">aire acondicionado</word>
+    </keyword>
+    <keyword identifier="42bc5c09-4ea1-407a-9a6e-573d3194e14a">
+        <word lang="en">facility</word>
+        <word lang="es">instalaciones</word>
+    </keyword>
+    <keyword identifier="d3f1e95d-de1b-4ad7-b8fd-79032a33be5d">
+        <word lang="en">TV</word>
+        <word lang="es">TV</word>
+    </keyword>
+    <keyword identifier="7f647edc-bf91-46ae-8157-59c1767e3301">
+        <word lang="en">table soccer</word>
+        <word lang="es">futbolín</word>
+    </keyword>
+    <keyword identifier="e820fa5c-40a4-4da4-ac7d-dfc932b9881e">
+        <word lang="en">wifi</word>
+        <word lang="es">wifi</word>
+    </keyword>
+    <keyword identifier="ae505652-527d-4707-a817-b06205ed081a">
+        <word lang="en">internet</word>
+        <word lang="es">internet</word>
+    </keyword>
+
+    <!-- Comidas -->
+    <keyword identifier="8857d65e-34ff-46c6-9c8b-eecf75d5f2e8">
+        <word lang="en">sandwitch</word>
+        <word lang="es">sandwitch</word>
+    </keyword>
+    <keyword identifier="dc419918-c25c-4230-bb14-39c599c482de">
+        <word lang="en">tortilla</word>
+        <word lang="es">tortilla</word>
+    </keyword>
+    <keyword identifier="fbbe997b-3e55-442f-8f4b-3db021ddead6">
+        <word lang="en">pintxo</word>
+        <word lang="es">pintxo</word>
+    </keyword>
+
+    <!-- Bebidas -->
+    <keyword identifier="0c376bf1-1139-4ca6-9cd5-494233e65a22">
+        <word lang="en">coffee</word>
+        <word lang="es">cafe</word>
+    </keyword>
+    <keyword identifier="0f517d9a-baa9-4c5e-90cc-aa880c06e22d">
+        <word lang="en">beer</word>
+        <word lang="es">caña</word>
+    </keyword>
+    <keyword identifier="8f6da4b8-69d7-4431-b7cd-a12bc8952536">
+        <word lang="en">pint</word>
+        <word lang="es">pinta</word>
+    </keyword>
+</restaurant_keywords>

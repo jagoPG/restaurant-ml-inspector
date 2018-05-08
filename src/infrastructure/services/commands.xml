@@ -1,0 +1,368 @@
+<?xml version="1.0" ?>
+<services>
+  <service
+    id="app.command.keyword.create"
+    class="src.application.command.keyword.create_keyword.CreateKeyword">
+    <arguments>
+      <argument name="keyword_repository" type="service">app.repository.keyword</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.keyword.create_keyword.CreateKeywordCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.analysis.create"
+    class="src.application.command.analysis.create_analysis.CreateAnalysis">
+    <arguments>
+      <argument name="analysis_repository" type="service">app.repository.analysis</argument>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.analysis.create_analysis.CreateAnalysisCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.social_network.create"
+    class="src.application.command.social_network.create_social_network.CreateSocialNetwork">
+    <arguments>
+      <argument name="social_networks_repository" type="service">app.repository.social_network</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.social_network.create_social_network.CreateSocialNetworkCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.project.create"
+    class="src.application.command.project.create_project.CreateProject">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.project.create_project.CreateProjectCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.project.edit"
+    class="src.application.command.project.edit_project.EditProject">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.project.edit_project.EditProjectCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.project.delete"
+    class="src.application.command.project.delete_project.DeleteProject">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.project.delete_project.DeleteProjectCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.add_facebook"
+    class="src.application.command.data_source.add_facebook.AddFacebookSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.add_facebook.AddFacebookSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.add_google_places"
+    class="src.application.command.data_source.add_google_places.AddGooglePlacesSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.add_google_places.AddGooglePlacesSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.add_twitter"
+    class="src.application.command.data_source.add_twitter.AddTwitterSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.add_twitter.AddTwitterSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.edit_facebook"
+    class="src.application.command.data_source.edit_facebook.EditFacebookSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.edit_facebook.EditFacebookSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.edit_google_places"
+    class="src.application.command.data_source.edit_google_places.EditGooglePlacesSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.edit_google_places.EditGooglePlacesSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.data_source.edit_twitter"
+    class="src.application.command.data_source.edit_twitter.EditTwitterSource">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.edit_twitter.EditTwitterSourceCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.restaurant_social_network.edit_source"
+    class="src.application.command.data_source.edit_project_social_network_data.EditProjectSocialNetworkData">
+    <arguments>
+      <argument name="restaurant_social_network" type="service">app.repository.social_network_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.edit_project_social_network_data.EditProjectSocialNetworkDataCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.process.restaurant_overview"
+    class="src.application.command.analysis.process_restaurant_overview.ProcessRestaurantOverview">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="analysis_repository" type="service">app.repository.analysis</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.analysis.process_restaurant_overview.ProcessRestaurantOverviewCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.process.restaurant_comments"
+    class="src.application.command.analysis.process_restaurant_reviews.ProcessRestaurantReviews">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+      <argument name="keyword_repository" type="service">app.repository.keyword</argument>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+      <argument name="analysis_repository" type="service">app.repository.analysis</argument>
+      <argument name="point_repository" type="service">app.repository.key_point</argument>
+      <argument name="spanish_analyser" type="service">app.analysis.spanish_analyser</argument>
+      <argument name="synonym_reducer" type="service">app.analysis.reduce_synonym</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.analysis.process_restaurant_reviews.ProcessRestaurantReviewsCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.retrieve.facebook_information"
+    class="src.application.command.data_source.retrieve_facebook.RetrieveFacebookData">
+    <arguments>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+      <argument name="facebook_client" type="service">app.social_networks.facebook</argument>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.retrieve_facebook.RetrieveFacebookDataCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.retrieve.google_information"
+    class="src.application.command.data_source.retrieve_google_places.RetrieveGooglePlacesData">
+    <arguments>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+      <argument name="google_client" type="service">app.social_networks.google_places</argument>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.retrieve_google_places.RetrieveGooglePlacesDataCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.retrieve.twitter_information"
+    class="src.application.command.data_source.retrieve_twitter.RetrieveTwitterData">
+    <arguments>
+      <argument name="social_network_repository" type="service">app.repository.social_network</argument>
+      <argument name="restaurant_repository" type="service">app.repository.social_network_restaurant</argument>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+      <argument name="twitter_client" type="service">app.social_networks.twitter</argument>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.data_source.retrieve_twitter.RetrieveTwitterDataCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.analysis.remove"
+    class="src.application.command.analysis.remove_analysis.RemoveAnalysis">
+    <arguments>
+      <argument name="analysis_repository" type="service">app.repository.analysis</argument>
+      <argument name="key_point_repository" type="service">app.repository.key_point</argument>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+      <argument name="restaurant_repository" type="service">app.repository.analysis_restaurant</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.analysis.remove_analysis.RemoveAnalysisCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.country.add"
+    class="src.application.command.country.create_country.CreateCountry">
+    <arguments>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.country.create_country.CreateCountryCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.user.add"
+    class="src.application.command.user.create_user.CreateUser">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.user.create_user.CreateUserCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.user.remove"
+    class="src.application.command.user.remove_user.RemoveUser">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.user.remove_user.RemoveUserCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.user.activate"
+    class="src.application.command.user.activate_user.ActivateUser">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.user.activate_user.ActivateUserCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.user.deactivate"
+    class="src.application.command.user.deactivate_user.DeactivateUser">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.user.deactivate_user.DeactivateUserCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.user.grant"
+    class="src.application.command.user.update_role.UpdateUserRole">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.user.update_role.UpdateUserRoleCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.review.edit_sentiment"
+    class="src.application.command.review.edit_sentiment.EditReviewSentiment">
+    <arguments>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.review.edit_sentiment.EditReviewSentimentCommand"/>
+    </tags>
+  </service>
+  <service
+    id="app.command.review.mark_spam"
+    class="src.application.command.review.mark_spam.MarkReviewSpam">
+    <arguments>
+      <argument name="review_repository" type="service">app.repository.review</argument>
+    </arguments>
+    <tags>
+      <tag
+        name="app.command_bus"
+        handles="src.application.command.review.mark_spam.MarkReviewSpamCommand"/>
+    </tags>
+  </service>
+</services>

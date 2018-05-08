@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<services>
+  <service
+    id="app.query.project.all"
+    class="src.application.query.project.get_projects.GetProjects">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+      <argument type="service" name="project_transformer">app.data_transformer.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus" handles="src.application.query.project.get_projects.GetProjectsQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.project.users"
+    class="src.application.query.project.get_user_projects.GetUserProjects">
+    <arguments>
+      <argument type="service" name="user_repository">app.repository.user</argument>
+      <argument type="service" name="project_transformer">app.data_transformer.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus" handles="src.application.query.project.get_user_projects.GetUserProjectsQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.project.of_name"
+    class="src.application.query.project.get_project_of_name.GetProjectOfName">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+      <argument type="service" name="project_transformer">app.data_transformer.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus" handles="src.application.query.project.get_project_of_name.GetProjectOfNameQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.analysis.of_id"
+    class="src.application.query.analysis.get_analysis_of_id.GetAnalysisOfId">
+    <arguments>
+      <argument type="service" name="analysis_repository">app.repository.analysis</argument>
+      <argument type="service" name="analysis_transformer">app.data_transformer.analysis</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus" handles="src.application.query.analysis.get_analysis_of_id.GetAnalysisOfIdQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.project.of_id"
+    class="src.application.query.project.get_project_of_id.GetProjectOfId">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+      <argument type="service" name="project_transformer">app.data_transformer.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus" handles="src.application.query.project.get_project_of_id.GetProjectOfIdQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.analysis.of_project_id"
+    class="src.application.query.analysis.get_analysis_of_project.GetAnalysisOfProject">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+      <argument type="service" name="analysis_transformer">app.data_transformer.analysis</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.analysis.get_analysis_of_project.GetAnalysisOfProjectQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.analysis.restaurant_data"
+    class="src.application.query.analysis.get_restaurant_data_from_analysis.GetRestaurantDataFromAnalysis">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+      <argument type="service" name="restaurant_analysis_transformer">app.data_transformer.restaurant_analysis</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.analysis.get_restaurant_data_from_analysis.GetRestaurantDataFromAnalysisQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.project.sources"
+    class="src.application.query.project.get_project_sources.GetProjectSources">
+    <arguments>
+      <argument type="service" name="project_repository">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.project.get_project_sources.GetProjectSourcesQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.facebook.get_id_of_page"
+    class="src.application.query.data_sources.retrieve_facebook_id.RetrieveFacebookId">
+    <arguments>
+      <argument name="facebook_client" type="service">app.social_networks.facebook</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.data_sources.retrieve_facebook_id.RetrieveFacebookIdQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.google_places.get_id_of_page"
+    class="src.application.query.data_sources.retrieve_google_places_id.RetrieveGooglePlacesId">
+    <arguments>
+      <argument name="google_client" type="service">app.social_networks.google_places</argument>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.data_sources.retrieve_google_places_id.RetrieveGooglePlacesIdQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.country.all"
+    class="src.application.query.country.get_countries.GetCountries">
+    <arguments>
+      <argument name="country_repository" type="service">app.repository.country</argument>
+      <argument name="country_data_transformer" type="service">app.data_transformer.country</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.country.get_countries.GetCountriesQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.restaurant.nearby"
+    class="src.application.query.project.get_nearby_restaurants.GetNearbyRestaurants">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.project.get_nearby_restaurants.GetNearbyRestaurantsQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.user.login"
+    class="src.application.query.user.get_user.GetUser">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+      <argument name="user_data_transformer" type="service">app.data_transformer.user</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.user.get_user.GetUserQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.user.all"
+    class="src.application.query.user.get_users.GetUsers">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+      <argument name="user_data_transformer" type="service">app.data_transformer.user</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.user.get_users.GetUsersQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.user.roles"
+    class="src.application.query.user.get_user_role.GetUserRole">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.user.get_user_role.GetUserRoleQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.user.access_to_project"
+    class="src.application.query.user.has_permission_to_project.UserHasPermissionToProject">
+    <arguments>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.user.has_permission_to_project.UserHasPermissionToProjectQuery"/>
+    </tags>
+  </service>
+    <service
+    id="app.query.user.check_api_key"
+    class="src.application.query.user.check_api_key.CheckApiKey">
+    <arguments>
+      <argument name="user_repository" type="service">app.repository.user</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.user.check_api_key.CheckApiKeyQuery"/>
+    </tags>
+  </service>
+  <service
+    id="app.query.analysis.get_keyword_summary"
+    class="src.application.query.analysis.get_keyword_summary.GetKeywordSummary">
+    <arguments>
+      <argument name="synonym_repository" type="service">app.repository.synonym</argument>
+      <argument name="project_repository" type="service">app.repository.project</argument>
+    </arguments>
+    <tags>
+      <tag name="app.query_bus"
+           handles="src.application.query.analysis.get_keyword_summary.GetKeywordSummaryQuery"/>
+    </tags>
+  </service>
+</services>

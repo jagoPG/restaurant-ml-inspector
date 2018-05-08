@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+*.log
+
+# IDE files
+.vscode
+.idea
+
+# Python files
+*.pyc
+venv/
+*.dist
+__pycache__
+
+# Web files
+node_modules/
+web/static
+
+# Sensitive files
+!bin/load_config.sh.dist
+bin/load_config.sh
+src/application/data/corpus
+!src/application/data/corpus/60_corpus.csv
+
+# Coverage files
+htmlcov/
+.coverage

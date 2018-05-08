@@ -1,0 +1,186 @@
+<?xml version="1.0" ?>
+<services>
+    <service
+        id="app.action.admin.get_admin"
+        class="web.routing.actions.admin.get_admin.GetAdmin">
+    </service>
+
+    <service
+        id="app.action.admin.get_projects"
+        class="web.routing.actions.admin.get_projects.GetProjects">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.create_project"
+        class="web.routing.actions.admin.create_project.CreateProject">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.edit_project"
+        class="web.routing.actions.admin.edit_project.EditProject">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.delete_project"
+        class="web.routing.actions.admin.delete_project.DeleteProject">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.add_data_source"
+        class="web.routing.actions.admin.add_data_source.AddDataSource">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.edit_data_source"
+        class="web.routing.actions.admin.edit_data_source.EditDataSource">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.grant_user_role"
+        class="web.routing.actions.admin.grant_user_role.GrantUserRole">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.activate_user"
+        class="web.routing.actions.admin.activate_user.ActivateUser">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.disable_user"
+        class="web.routing.actions.admin.disable_user.DisableUser">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.get_users"
+        class="web.routing.actions.admin.get_users.GetUsers">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.edit_review_sentiment"
+        class="web.routing.actions.admin.edit_review_sentiment.EditReviewSentiment">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.admin.mark_review_as_spam"
+        class="web.routing.actions.admin.mark_review_as_spam.MarkReviewAsSpam">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.request_retrieve_data_from_social_networks"
+        class="web.routing.actions.request_retrieve_data_from_social_networks.RequestRetrieveDataFromSocialNetworks">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.request_analysis"
+        class="web.routing.actions.request_analysis.RequestAnalysis">
+        <arguments>
+            <argument name="command_bus" type="service">app.command_bus</argument>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_available_projects"
+        class="web.routing.actions.api.get_available_projects.GetAvailableProjects">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_countries"
+        class="web.routing.actions.api.get_countries.GetCountries">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_nearby_restaurants"
+        class="web.routing.actions.api.get_nearby_restaurants.GetNearbyRestaurants">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_project_basic_data"
+        class="web.routing.actions.api.get_project_basic_data.GetProjectBasicData">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_project_data_sources"
+        class="web.routing.actions.api.get_project_data_sources.GetProjectDataSources">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_restaurant_details"
+        class="web.routing.actions.api.get_restaurant_details.GetRestaurantDetails">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_project_details"
+        class="web.routing.actions.api.get_project_details.GetProjectDetails">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+
+    <service
+        id="app.action.api.get_restaurant_network_identifier"
+        class="web.routing.actions.api.get_restaurant_network_identifier.GetRestaurantNetworkIdentifier">
+        <arguments>
+            <argument name="query_bus" type="service">app.query_bus</argument>
+        </arguments>
+    </service>
+</services>

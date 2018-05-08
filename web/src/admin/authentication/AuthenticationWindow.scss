@@ -1,0 +1,68 @@
+body {
+  /** Vilma Glenn */
+  background: url(/images/auth_background.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.authentication {
+  background: rgba(255, 255, 255, .85);
+  border: #e4e6e8 solid 1px;
+  left: 50%;
+  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 20px);
+}
+
+.authentication-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.authentication-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.authentication-info__body {
+  flex: 1;
+
+  h4 {
+    font-size: 1.1em;
+  }
+}
+
+.authentication-info__bottom {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .authentication {
+    border: #e4e6e8 solid 1px;
+    left: 50%;
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 20px);
+  }
+  .authentication-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .authentication {
+      border: #e4e6e8 solid 1px;
+      left: 50%;
+      position: fixed;
+      margin: 0 auto;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(60% - 20px);
+  }
+}

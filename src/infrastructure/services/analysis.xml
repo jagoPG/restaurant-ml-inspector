@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<services>
+  <service
+    id="app.analysis.corpus_manager"
+    class="src.persistence.database.corpus_manager.CorpusManager">
+    <arguments>
+      <argument type="service" name="_review_repository">app.repository.review</argument>
+    </arguments>
+  </service>
+  <service
+    id="app.analysis.spanish_analyser"
+    class="src.application.analysis.spanish_analysis.SpanishAnalysis">
+    <arguments>
+      <argument type="service" name="_keyword_repository">app.repository.keyword</argument>
+      <argument type="service" name="_corpus_manager">app.analysis.corpus_manager</argument>
+    </arguments>
+  </service>
+  <service
+    id="app.analysis.reduce_synonym"
+    class="src.application.analysis.reduce_synonyms.WordListSynonymReducer">
+    <arguments>
+      <argument type="service" name="word_repository">app.repository.keyword</argument>
+    </arguments>
+  </service>
+</services>
