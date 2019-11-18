@@ -18,7 +18,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "pigeon-maps": "^0.9.2",
     "pigeon-marker": "^0.3.3",
     "pigeon-overlay": "^0.2.2",
